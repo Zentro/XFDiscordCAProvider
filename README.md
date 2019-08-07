@@ -2,7 +2,9 @@
 
 # Discord Integration
 <h2>Installation</h2>
-To install, please consult the XenForo 2 manuel on installing addons.
+To install, please consult the XenForo 2 manual on installing addons.
 
 <h2>Setup</h2>
-To setup, please consult the XenForo 2 manuel on Connected accounts.
+To setup, please consult the XenForo 2 manual on Connected accounts.
+
+Need help? Join my Discord server! https://discord.gg/sWDkGCT
