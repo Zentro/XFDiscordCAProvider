@@ -1,2 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<template_modifications/>
+<template_modifications>
+  <modification type="public" template="core_button.less" modification_key="discord_provider_button" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[&--facebook]]></find>
+    <replace><![CDATA[&--discord
+{
+	.m-buttonColorVariation(#7289DA, white);
+	.m-buttonIcon(@fa-var-discord, .58em);
+}
+$0]]></replace>
+  </modification>
+</template_modifications>
