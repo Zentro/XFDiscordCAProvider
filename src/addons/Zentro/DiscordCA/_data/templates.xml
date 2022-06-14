@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <templates>
-  <template type="admin" title="connected_account_provider_discord" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[<xf:textboxrow name="options[client_id]" value="{$options.client_id}"
+  <template type="admin" title="connected_account_provider_discord" version_id="2010000" version_string="2.1.0"><![CDATA[<xf:textboxrow name="options[client_id]" value="{$options.client_id}"
 	label="{{ phrase('client_id') }}"
 	hint="{{ phrase('required') }}"
 	explain="{{ phrase('con_acc_discord_app_id_explain') }}" />
@@ -9,7 +9,24 @@
 	label="{{ phrase('client_secret') }}"
 	hint="{{ phrase('required') }}"
 	explain="{{ phrase('con_acc_discord_app_secret_explain') }}" />]]></template>
-  <template type="public" title="connected_account_associated_discord" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[<a href="https://discord.com/channels/@me" target="_blank">
+  <template type="admin" title="connected_account_provider_test_discord" version_id="2010000" version_string="2.1.0"><![CDATA[<xf:if is="!$providerData">
+	<xf:macro template="connected_account_provider_test_macros" name="explain"
+		arg-providerTitle="{$provider.title}"
+		arg-keyName="{{ phrase('client_id') }}"
+		arg-keyValue="{$provider.options.client_id}" />
+<xf:else />
+	<xf:macro template="connected_account_provider_test_macros" name="success" />
+
+	<xf:macro template="connected_account_provider_test_macros" name="display_name"
+		arg-name="{$providerData.username}" />
+
+	<xf:macro template="connected_account_provider_test_macros" name="email"
+		arg-email="{$providerData.email}" />
+
+	<xf:macro template="connected_account_provider_test_macros" name="picture"
+		arg-url="{$providerData.avatar_url}" />
+</xf:if>]]></template>
+  <template type="public" title="connected_account_associated_discord" version_id="2010000" version_string="2.1.0"><![CDATA[<a href="https://discord.com/channels/@me" target="_blank">
 	<img src="{$providerData.avatar_url}" width="48" alt="" />
 </a>
 <div><a href="https://discord.com/channels/@me" target="_blank">{$providerData.username} {$providerData.username|parens}</a></div>]]></template>
