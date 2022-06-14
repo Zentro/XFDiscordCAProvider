@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is a very basic integration between the forum software and the connected account provider. Similiar to the other connected account providers included with XenForo, this add-on lets for visitors to log in and register via their Discord account. This can help reduce the friction of creating an account or remembering login details, especially if your forum's demographic consists of visitors who would likely already have a Discord account.
+This is an integration between the forum software and the connected account provider. Similar to the other connected account providers included with XenForo, this add-on lets visitors log in and register via their Discord account. This can help reduce the friction of creating an account or remembering login details, especially if your forum's demographic consists of visitors who would likely already have a Discord account.
 
 ## Requirements
 
@@ -11,7 +11,7 @@ This is a very basic integration between the forum software and the connected ac
 
 ## Installation
 
-To get started, it's recommended to follow the XenForo 2 Manual's guide on Installing or upgrading an add-on.
+To get started, it's recommended to follow the [XenForo 2 Manual's guide on Installing or upgrading an add-on](https://xenforo.com/docs/xf2/add-ons/#installing-or-upgrading-an-add-on).
 
 ### Creating a Discord application
 
@@ -32,7 +32,7 @@ To finalize the Discord connected account, you must enter the data obtained abov
 1. Log in to the Admin Control panel.
 2. Go to **Setup > Connected accounts.**
 3. If you installed the add-on properly, you should see **Discord** in the list. Click on it and enter the **Client ID** and **Client secret** obtained earlier into the respective fields and save.
-4. Test the connected account
+4. [Test the connected account](https://xenforo.com/docs/xf2/connected-accounts/#testing-connected-accounts)
 
 ## License
 
