@@ -1,6 +1,6 @@
 <?php
 
-namespace ZW\Discord\ConnectedAccount\Provider;
+namespace Zentro\DiscordCA\ConnectedAccount\Provider;
 
 use XF\Entity\ConnectedAccountProvider;
 use XF\ConnectedAccount\Http\HttpResponseException;
@@ -9,12 +9,12 @@ class Discord extends \XF\ConnectedAccount\Provider\AbstractProvider
 {
 	public function getOAuthServiceName()
 	{
-		return 'ZW\Discord:Service\Discord';
+		return 'Zentro\DiscordCA:Service\Discord';
 	}
 	
 	public function getProviderDataClass()
 	{
-		return 'ZW\Discord:ProviderData\Discord';
+		return 'Zentro\DiscordCA:ProviderData\Discord';
 	}
 
 	public function getDefaultOptions()

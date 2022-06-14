@@ -1,6 +1,6 @@
 <?php
 
-namespace ZW\Discord\ConnectedAccount\ProviderData;
+namespace Zentro\DiscordCA\ConnectedAccount\ProviderData;
 
 class Discord extends \XF\ConnectedAccount\ProviderData\AbstractProviderData
 {
@@ -17,6 +17,11 @@ class Discord extends \XF\ConnectedAccount\ProviderData\AbstractProviderData
 	public function getUsername()
 	{
 		return $this->requestFromEndpoint('username');
+	}
+
+	public function getDiscriminator()
+	{
+		return $this->requestFromEndpoint('discriminator');
 	}
 
 	public function getEmail()

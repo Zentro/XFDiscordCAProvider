@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <templates>
   <template type="admin" title="connected_account_provider_discord" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[<xf:textboxrow name="options[client_id]" value="{$options.client_id}"
-	label="{{ phrase('app_id') }}"
+	label="{{ phrase('client_id') }}"
 	hint="{{ phrase('required') }}"
 	explain="{{ phrase('con_acc_discord_app_id_explain') }}" />
 
 <xf:textboxrow name="options[client_secret]" value="{$options.client_secret}"
-	label="{{ phrase('app_secret') }}"
+	label="{{ phrase('client_secret') }}"
 	hint="{{ phrase('required') }}"
 	explain="{{ phrase('con_acc_discord_app_secret_explain') }}" />]]></template>
-  <template type="public" title="connected_account_associated_discord" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[<a href="https://discordapp.com/channels/@me" target="_blank">
+  <template type="public" title="connected_account_associated_discord" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[<a href="https://discord.com/channels/@me" target="_blank">
 	<img src="{$providerData.avatar_url}" width="48" alt="" />
 </a>
-<div><a href="https://discordapp.com/channels/@me" target="_blank">{$providerData.username} {$providerData.username|parens}</a></div>]]></template>
+<div><a href="https://discord.com/channels/@me" target="_blank">{$providerData.username} {$providerData.username|parens}</a></div>]]></template>
 </templates>

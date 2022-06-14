@@ -1,6 +1,6 @@
 <?php
 
-namespace ZW\Discord\ConnectedAccount\Service;
+namespace Zentro\DiscordCA\ConnectedAccount\Service;
 
 use OAuth\OAuth2\Token\StdOAuth2Token;
 use OAuth\Common\Http\Exception\TokenResponseException;
@@ -22,18 +22,18 @@ class Discord extends \OAuth\OAuth2\Service\AbstractService
 
         if (null === $baseApiUri)
 		{
-            $this->baseApiUri = new Uri('https://discordapp.com/api/');
+            $this->baseApiUri = new Uri('https://discord.com/api/');
         }
     }
 	
     public function getAuthorizationEndpoint()
     {
-        return new Uri('https://discordapp.com/api/oauth2/authorize');
+        return new Uri('https://discord.com/api/oauth2/authorize');
     }
 
     public function getAccessTokenEndpoint()
     {
-        return new Uri('https://discordapp.com/api/oauth2/token');
+        return new Uri('https://discord.com/api/oauth2/token');
     }
 
     protected function getAuthorizationMethod()

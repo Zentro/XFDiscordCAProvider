@@ -1,6 +1,6 @@
 <?php
 
-namespace ZW\Discord;
+namespace Zentro\DiscordCA;
 
 use XF\Db\Schema\Alter;
 use XF\Db\Schema\Create;
@@ -20,7 +20,7 @@ class Setup extends AbstractSetup
 	{
 		$this->db()->insert('xf_connected_account_provider', [
 			'provider_id' => 'discord',
-			'provider_class' => 'ZW\Discord:Provider\Discord',
+			'provider_class' => 'Zentro\DiscordCA:Provider\Discord',
 			'display_order' => 100,
 			'options' => ''
 		], true);		
@@ -28,6 +28,6 @@ class Setup extends AbstractSetup
 
 	public function uninstall(array $stepParams = [])
 	{
-		$this->db()->delete('xf_connected_account_provider', 'provider_class = ?', 'ZW\Discord:Provider\Discord');
+		$this->db()->delete('xf_connected_account_provider', 'provider_class = ?', 'Zentro\DiscordCA:Provider\Discord');
 	}
 }

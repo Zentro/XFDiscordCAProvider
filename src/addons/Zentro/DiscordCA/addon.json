@@ -1,0 +1,14 @@
+{
+    "legacy_addon_id": "",
+    "title": "Discord Connected Account Provider",
+    "description": "Let your visitors log in and register via their Discord account.",
+    "version_id": 2010000,
+    "version_string": "2.1.0",
+    "dev": "Rafael Galvan",
+    "dev_url": "https://zentro.codes",
+    "faq_url": "",
+    "support_url": "",
+    "extra_urls": [],
+    "require": [],
+    "icon": "fa-user"
+}
