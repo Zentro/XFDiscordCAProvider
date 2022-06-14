@@ -2,6 +2,6 @@
 <phrases>
   <phrase title="con_acc.discord" version_id="1000070" version_string="1.0.0" global_cache="1"><![CDATA[Discord]]></phrase>
   <phrase title="con_acc_desc.discord" version_id="1000070" version_string="1.0.0" global_cache="1"><![CDATA[]]></phrase>
-  <phrase title="con_acc_discord_app_id_explain" version_id="1000070" version_string="1.0.0" global_cache="1"><![CDATA[The ID that is associated with your <a href="https://discordapp.com/developers" target="_blank">Discord application</a> for this domain.]]></phrase>
+  <phrase title="con_acc_discord_app_id_explain" version_id="1000070" version_string="1.0.0" global_cache="1"><![CDATA[The ID that is associated with your <a href="https://discord.com/developers/" target="_blank">Discord application</a> for this domain.]]></phrase>
   <phrase title="con_acc_discord_app_secret_explain" version_id="1000070" version_string="1.0.0" global_cache="1"><![CDATA[The secret for the Discord application you created for this domain.]]></phrase>
 </phrases>
