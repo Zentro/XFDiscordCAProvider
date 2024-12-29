@@ -38,7 +38,14 @@ class Discord extends \XF\ConnectedAccount\ProviderData\AbstractProviderData
 	{
 		$providerKey = $this->getProviderKey();
 		$avatar = $this->requestFromEndpoint('avatar');
-		
-		return 'https://cdn.discordapp.com/avatars/'.$providerKey.'/'.$avatar.'.png';
+
+        if($avatar) {
+            return 'https://cdn.discordapp.com/avatars/' . $providerKey . '/' . $avatar . '.png';
+        }
+        else {
+            //discord has 5 default avatars
+           $defaultAvatarIndex = random_int(0, 4);
+           return "https://cdn.discordapp.com/embed/avatars/" . $defaultAvatarIndex . '.png';
+        }
 	}
 }
